@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0999683a-a608-413d-983f-caab347c34c9">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from kelas]]>
+	</queryString>
+	<field name="id_kelas" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_kelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kompetensi_keahlian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="16" width="555" height="50" uuid="35ed809f-b0c8-4d0e-8e22-8cb918b9a785"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLASS DATA REPORT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="59" y="7" width="440" height="44" uuid="6fbaf8e9-19c6-448c-ae8a-ba39df9ac1f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<paragraph lineSpacing="Proportional"/>
+				</textElement>
+				<text><![CDATA[Semua data yang tersimpan hanya bisa dicetak oleh petugas sebagai admin, jika ada kesalahan pada data hubungi admin dan segera perbaiki]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="357" y="1" width="142" height="34" uuid="ab5bef03-4986-4bbd-b5b3-b4f165a409ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KOMPETENSI KEAHLIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="1" width="81" height="34" uuid="747d75f2-6314-4026-95d2-350b406fe138"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA KELAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="1" width="139" height="34" uuid="4e368f9f-160d-4249-bcbd-5c5ba582fd2e"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID KELAS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="51" width="555" height="1" uuid="9c3363ea-d8c5-495d-b15b-408668d0d8b5"/>
+				<graphicElement>
+					<pen lineWidth="3.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="4" width="555" height="1" uuid="010f0918-dbf5-4f76-8a96-425a6dce0011"/>
+				<graphicElement>
+					<pen lineWidth="5.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="357" y="13" width="142" height="20" uuid="d59852ed-7376-41ba-a284-396c94cb28c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single" tabStopWidth="40"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kompetensi_keahlian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="59" y="13" width="139" height="20" uuid="5a4f98b0-f85b-44fa-9801-35d9b14753d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single" tabStopWidth="40"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="13" width="81" height="20" uuid="10e6b8ae-1368-49a1-8544-dfaf1cc9302c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single" tabStopWidth="40"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_kelas}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="50" width="555" height="1" uuid="7e1f053b-9d46-4a2d-9cc2-d8580230ae50"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="428" y="0" width="100" height="20" uuid="c43c5459-30b5-48c8-a7f7-7e49aa8d8a30"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TTD Petugas,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="63" width="100" height="20" uuid="aa07dc1b-213b-4454-83fd-a4c3c06dfb16"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ADMIN]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
