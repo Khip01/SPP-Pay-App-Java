@@ -1,0 +1,45 @@
+*Login Page Petugas sebagai Administrator
+
+ID       : 224
+Username : Aakhif
+Password : admin
+
+*Login Page Petugas sebagai Petugas
+
+ID       : 242
+Username : Aakhif
+Password : petugas
+
+*Login Page Siswa
+
+NISN     : 1234567890
+Name     : Aakhif
+ID SPP   : 13149633
+
+
+Feature Update -TO DO LIST 
+
+DONE - Crud Data Siswa - ID SPP = INDEX
+	Penjelasan : karena ID SPP adalah Id dari pembayaran dari setiap siswa maka bisa diduplikat
+
+DONE - Entri Transaksi Pembayaran - TGL BAYAR(TextField) = DatePicker
+	Penjelasan : Kalo bisa TextField tglBayar pada Form bisa menggubakan DatePicker agar bisa mengurangi kesalaham input
+
+DONE - Entri Transaksi - Jumlah Bayar = Mengikuti ID SPP dari siswa
+	Penjelasan : Mengikuti ID SPP karena Setiap siswa membayar sesuai dengan ID SPP yang telah ditentukan
+
+DONE - Entri Transaksi - Save = Mengecek apakah Siswa tersebut sudah pernah membayar SPP dibulan yang diinput
+	Penjelasan : Mencegah siswa membayar SPP 2 kali dalam 1 bulan (Karena membayar SPP hanya 1x perbulan)
+
+DONE - Print Report - Cetak Data HISTORY PEMBAYARAN = DIBAGI MENJADI 3
+	Penjelasan : Dibagi menjadi 3 yaitu 
+		- Cetak data sesuai dengan data yang kita pilih 
+		- Cetak data perbulan 
+		- Cetak data semua bulan seuai dengan nama siswa yang dipilih
+
+DONE - History Pembayaran - Table = Ditambah Nama Dari Siswa
+	Agar kita mengetahui Nama dari siswa yang membayar, dan nama siswa diambil dari NISN yang dia punya 
+
+DONE - Entri Transaksi error!! 
+
+select id_pembayaran, id_petugas, pembayaran.nisn, nama, tgl_bayar, bulan_dibayar, tahun_dibayar, pembayaran.id_spp, jumlah_bayar from pembayaran inner join siswa on pembayaran.nisn = siswa.nisn; 
