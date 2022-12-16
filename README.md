@@ -1,6 +1,6 @@
 # SPP-Pay-App-Java
 
-![](https://img.shields.io/badge/Type-Desktop%20App%2FAplikasi%20Desktop-purple)
+![](https://img.shields.io/badge/Type-Desktop%20App%2FAplikasi%20Desktop-purple) ![](https://img.shields.io/badge/-Assignment-red)
 
 ### Hello👋
 
