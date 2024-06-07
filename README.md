@@ -20,7 +20,8 @@ Contains a desktop application for paying tuition fees, CRUD implementation in J
 Operating system I use: Windows 11\
 Required Software:
 - Netbeans IDE 8.2 
-> __Warning__ (if you are using version above 8.2 , make sure your IDE has MySQL JDBC Driver. **Otherwise you should download it manually and add it to your library)**
+> [!WARNING]
+> (if you are using version above 8.2 , make sure your IDE has MySQL JDBC Driver. **Otherwise you should download it manually and add it to your library)**
 - XAMPP php v8.1 or above
 
 ### Instructions:
@@ -31,7 +32,7 @@ Run XAMPP and open `localhost/phpmyadmin`, create a new database then open the d
 
 - [IMPORT THE PROJECT]\
 Open Netbeans IDE, select `File -> Open Project -> Select The Project` **(Aplikasi Pembayaran SPP)**. 
-> __Note__ \
+> [!NOTE]
 If a pop up appears telling us to resolve the error, you can resolve it by entering the library that I have prepared in the `stuff` folder. And after that you don't need to add the library in the next instruction
 
 - [ADD SOME LIBRARY]\
@@ -42,7 +43,7 @@ In **Netbeans IDE**, open the project that was created earlier, right click on `
 ---
 
 
-> __Note__ \
+> [!NOTE]
 `Login Page as Administrator`\
 ID       : 224\
 Username : Aakhif\
