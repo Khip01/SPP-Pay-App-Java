@@ -11,6 +11,10 @@ The language in the application : Indonesia
 ### Description :
 Contains a desktop application for paying tuition fees, CRUD implementation in Java Jframe Form. Also using Mysql as Database.
 
+### Project Overview
+[![Static Badge](https://img.shields.io/badge/view-view?style=for-the-badge&label=click%20to%20see%20this%20project%20overview&labelColor=%2335c914&color=%232ede07)
+](https://khip01.github.io/me/#/creation/details?id=30US) 
+
 ### Feature
 - There are admins, officers and students as users
 - Complete update to the Form's better performance mechanics
